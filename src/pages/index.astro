@@ -1,4 +1,5 @@
 ---
+// Component Imports
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/sections/Hero.astro';
 import Services from '../components/sections/Services.astro';
@@ -6,10 +7,19 @@ import AboutUs from '../components/sections/AboutUs.astro';
 import Features from '../components/sections/Features.astro';
 import CTA from '../components/sections/CTA.astro';
 import Brands from '../components/sections/Brands.astro';
+
+import Button from '../components/Button.astro';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
 ---
 
 <Layout title="Welcome to AgenceX">
 	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+		<div class="grid place-items-center h-screen content-center">
+			<Button>Tailwind Button in Astro!</Button>
+			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+		</div>
 		<Hero/>
 		<Brands/>
 		<Services/>
