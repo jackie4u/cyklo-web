@@ -1,12 +1,12 @@
 ---
 // Component Imports
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/sections/Hero.astro';
-import Services from '../components/sections/Services.astro';
-import AboutUs from '../components/sections/AboutUs.astro';
+import Layout from '../layouts/MainLayout.astro';
+import Aktuality from '../components/sections/Aktuality.astro';
+import Servis from '../components/sections/Servis.astro';
+import ONas from '../components/sections/ONas.astro';
 import Features from '../components/sections/Features.astro';
 import CTA from '../components/sections/CTA.astro';
-import Brands from '../components/sections/Brands.astro';
+import Znacky from '../components/sections/Znacky.astro';
 
 import Button from '../components/Button.astro';
 
@@ -14,17 +14,13 @@ import Button from '../components/Button.astro';
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<Layout title="Welcome to AgenceX">
+<Layout title="Vítejte v Cyklo Vačkář">
 	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-		<Hero/>
-		<Brands/>
-		<Services/>
-		<AboutUs/>
+		<Aktuality/>
+		<Servis/>
+		<Znacky/>
+		<ONas/>
 		<Features/>
 		<CTA/>
+		<a href="/backup" class="p-4 underline">!!! Backup !!! </a>
 	</main>
-</Layout>

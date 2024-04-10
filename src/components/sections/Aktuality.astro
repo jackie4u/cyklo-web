@@ -1,0 +1,31 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+---
+<section id="aktuality" class="relative pt-32 lg:pt-36">
+    <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+        <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+        lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+            
+            <h1 class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight
+             font-bold text-heading-1">
+             PĚT DŮVODŮ <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">PROČ JEZDIT</span> NA KOLE.
+            </h1>
+            <Paragraph className="mt-8">
+                <ol class="list-decimal">
+                    <li>Jízda na kole je rychlá – cestu kratší než 5 km ujedete ve městě rychleji na kole než autem.</li>
+                    <li>Jízda na kole je zdravá -  cesty vedou zelenými zónami, podél řek, málo frekventovanými ulicemi, což je vzhledem ke znečištění zplodinami automobilů velmi výhodné.</li>
+                    <li>Jízda na kole je ekologická - má nulové emise a je takřka nehlučná. Šetříte parkovací místa, snižujete spotřebu ropy.</li>
+                    <li>Šetříte svou peněženku – ušetříte za benzín, servis auta, parkovací místa nebo za jízdenky v hromadné dopravě.</li>
+                    <li>Ale hlavně – na kole vás to přece baví!</li>
+                </ol>     
+            </Paragraph>
+        </div>
+
+        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+            <img src="/images/aktuality.jpeg" alt="Aktuality image" width="2350" height="2359" class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+        </div>
+    </Container>
+
+    
+</section>
