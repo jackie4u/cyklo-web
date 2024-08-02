@@ -1,39 +1,39 @@
 ---
 import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 import Aktualita from "../cards/Aktualita.astro";
 import { aktuality } from "../../utils/aktuality.ts";
 
 type AktualitaProps = {
-    title: string;
-    description: string;
-    image: string
+  title: string;
+  description: string;
+  image: string;
 };
-
 ---
 
 <section id="aktuality">
-    <Container className="space-y-10 md:sapce-y-12">
-        <div class="text-center max-w-3xl mx-auto space-y-4">
-            <Title>
-                <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
-                    AKTUALITY
-                </span>
-            </Title>
-            <Paragraph>
-                Aktuality dle důležitosti
-            </Paragraph>
-        </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {
-                    aktuality.map((aktualita: AktualitaProps) => {
-                    return (
-                            <Aktualita title={aktualita.title} description={aktualita.description} image={aktualita.image}>
-                            </Aktualita>
-                            );
-                    })
-            }
-        </div>
-    </Container>
+  <Container className="space-y-10 md:sapce-y-12">
+    <div class="text-center max-w-3xl mx-auto space-y-4">
+      <Title>
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+        >
+          AKTUALITY
+        </span>
+      </Title>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {
+        aktuality.map((aktualita: AktualitaProps) => {
+          return (
+            <Aktualita
+              title={aktualita.title}
+              description={aktualita.description}
+              image={aktualita.image}
+            ></Aktualita>
+          );
+        })
+      }
+    </div>
+  </Container>
 </section>

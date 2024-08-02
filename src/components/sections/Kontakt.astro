@@ -1,57 +1,156 @@
 ---
-import Button from "../shared/Button.astro";
+// import Button from "../shared/Button.astro";
 import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 ---
+
 <section id="kontakt" class="pb-20">
   <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+    {/* Map Container - Now takes full width on larger screens */}
     <div
-      class="relative flex flex-col items-center text-left lg:text-left lg:py-7 xl:py-8
-      lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
+      class="flex-1 w-full lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl mb-8 lg:mb-0"
     >
-      <div class="mx-auto text-center max-w-xl md:max-w-2xl relative">
-        <Title>
-          <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
-            KONTAKT
-          </span>
-        </Title>
-        <div class="mx-auto text-left max-w-xl md:max-w-2xl relative">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.7157234034935!2d17.10943937691797!3d49.47098585740116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471257472823fcbb%3A0x2376b835706c52a2!2sUprkova%2074%2F16%2C%20796%2001%20Prost%C4%9Bjov%201!5e0!3m2!1scs!2scz!4v1722628347315!5m2!1scs!2scz"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full
+h-full rounded-3xl object-cover"></iframe>
+    </div>
 
-          <Paragraph className={"pt-10"}>
-            Otevírací doba:
-            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
-              <li>Pondělí - Pátek: 9:00 - 17:00</li>
-              <li>Sobota: 9:00 - 12:00</li>
-              <li>Neděle: Zavřeno</li>
-            </ul>
-          </Paragraph>
+    {/* Contact Details - Placed on the right half of the screen */}
+    <div class="flex-1 lg:w-1/2 lg:pl-8">
+      <Title>
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+        >
+          KONTAKT
+        </span>
+      </Title>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        {/* Contact Details - Placed on the right half of the screen */}
+        <div>
+          <h3 class="text-heading-2 font-semibold text-xl mb-2">
+            Kdy máme otevřeno?
+          </h3>
+          <ul
+            class="space-y-2 text-heading-3"
+            itemscope
+            itemtype="http://schema.org/OpeningHoursSpecification"
+          >
+            <li
+              itemprop="dayOfWeek"
+              itemscope
+              itemtype="http://schema.org/DayOfWeek"
+            >
+              <span itemprop="name">Pondělí - Pátek</span>:
+              <time itemprop="opens" datetime="09:00">9:00</time> -
+              <time itemprop="closes" datetime="17:00">17:00</time>
+            </li>
+            <li
+              itemprop="dayOfWeek"
+              itemscope
+              itemtype="http://schema.org/DayOfWeek"
+            >
+              <span itemprop="name">Sobota</span>:
+              <time itemprop="opens" datetime="09:00">9:00</time> -
+              <time itemprop="closes" datetime="12:00">12:00</time>
+            </li>
+            <li
+              itemprop="dayOfWeek"
+              itemscope
+              itemtype="http://schema.org/DayOfWeek"
+            >
+              <span itemprop="name">Neděle</span>: Zavřeno
+            </li>
+          </ul>
         </div>
 
-        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
-          <Button variant={"primary"}>
-            <span class="relative z-[5]">Napište nám</span>
-          </Button>
+        <div>
+          <h3 class="text-heading-2 font-semibold text-xl mb-2">
+            Jak nás kontaktovat?
+          </h3>
+          <ul class="space-y-2 text-heading-3">
+            <li>
+              Mobil:
+              <a
+                href="tel:+420603898162"
+                class="text-primary font-semibold hover:underline transition duration-300"
+                >+420 603 898 162</a
+              >
+            </li>
+            <li>
+              Email:
+              <a
+                href="mailto:info@vackar.cz"
+                class="text-primary font-semibold hover:underline transition duration-300"
+                >info@vackar.cz</a
+              >
+            </li>
+          </ul>
+          {/* Call to action button */}
+          {
+            /* <div class="mt-10">
+            <Button variant={"primary"}>
+              <span class="relative z-[5]">Napište nám</span>
+            </Button>
+          </div> */
+          }
+          {/* Social Media Links (replace with your actual links) */}
+          <div class="mt-8 flex space-x-4">
+            <a
+              href="facebook"
+              class="transition hover:text-heading-1 hover:scale-105"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="w-5 h-5"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                ></path>
+              </svg>
+              <span class="sr-only">social link</span>
+            </a>
+          </div>
         </div>
-        
-        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
-          <p>Telefon: +420 603 898 162</p>
-          <p>Email: info@vackar.cz</p>
-          <br />
-          <p>
-            Naše adresa:<br />
-            Uprkova 16<br />
-            Prostějov, 796 01<br />
-          </p>
-          <br />
-          <p>
-            IČ: 04542746
-          </p>
-          <p>
-            DIČ: CZ04542746
-          </p>
+
+        <div>
+          <h3 class="text-heading-2 font-semibold text-xl mb-2">
+            Kde nás najdete?
+          </h3>
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <a
+              href="https://maps.google.com/?cid=2555432378238259874"
+              target="_blank"
+              class="text-primary font-semibold hover:underline transition duration-300"
+            >
+              <div itemprop="streetAddress">Uprkova 74/16</div>
+              <div itemprop="postalCode">796 01</div>
+              <div itemprop="addressLocality">Prostějov</div>
+              <div itemprop="addressCountry">Czechia</div>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-heading-3">IČ: 04542746</p>
+          <p class="text-heading-3">DIČ: CZ04542746</p>
         </div>
       </div>
+      {/* End of grid for contact details */}
     </div>
   </Container>
 </section>

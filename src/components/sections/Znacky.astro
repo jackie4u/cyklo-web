@@ -5,36 +5,37 @@ import Znacka from "../cards/Znacka.astro";
 import { znacky } from "../../utils/znacky.ts";
 
 type ZnackaProps = {
-    name: string;
-    logo: string;
-    website: string
+  name: string;
+  logo: string;
+  website: string;
 };
 ---
 
 <section id="znacky">
-    <Container className="space-y-8">
-        <div class="text-center max-w-3xl mx-auto">
+  <Container className="space-y-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <Title>
+        ZNAČKY KOL,
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+        >
+          KTERÉ PRODÁVÁME
+        </span>
+      </Title>
+    </div>
 
-            <Title>
-                ZNAČKY KOL,  
-                <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
-                    KTERÉ PRODÁVÁME
-                </span>
-            </Title>
-
-        </div>
-
-        <div class="flex justify-center flex-wrap gap-4">
-            {
-            znacky.map((znacka: ZnackaProps) => {
-                return (
-                        <Znacka name={znacka.name} logo={znacka.logo} website={znacka.website}>
-                        </Znacka>
-                        );
-                })
-            }
-        </div>
-
-    </Container>
-    
+    <div class="flex justify-center flex-wrap gap-4">
+      {
+        znacky.map((znacka: ZnackaProps) => {
+          return (
+            <Znacka
+              name={znacka.name}
+              logo={znacka.logo}
+              website={znacka.website}
+            ></Znacka>
+          );
+        })
+      }
+    </div>
+  </Container>
 </section>
