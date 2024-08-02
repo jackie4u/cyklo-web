@@ -1,39 +1,47 @@
 ---
-import Service from "../cards/Service.astro";
 import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
-import { services } from "../../utils/data.ts";
-
-
-type ServisProps = {
-    title: string;
-    description: string;
-    icon: string
-};
-
-
 ---
-
-<section id="servis">
-    <Container className="space-y-10 md:sapce-y-12">
-        <div class="text-center max-w-3xl mx-auto space-y-4">
+<section id="servis" class="relative pt-32 lg:pt-36">
+    <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+        <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+        lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+            
             <Title>
-                Co nabízíme
+                NABÍZÍME 
+                <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
+                    SERVIS
+                </span>
             </Title>
-            <Paragraph>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            
+            <Paragraph className="mt-8">
+                <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+                    <li>
+                        <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark; </span> Celkové seřízení <br />
+                        <span class="font-normal text-secondary inline-flex justify-left"> Zahrnuje seřízení brzd, převodů a přehazovaček, výměnu opotřebovaných lanek, promazání řetězu a kontrolu jízdních kol </span>
+                    </li>
+                    
+                    <li>
+                        <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Servis vidlic <br />
+                        <span class="font-normal text-secondary inline-flex justify-left"> Údržba hydraulických a pneumatických vidlic, včetně výměny oleje a těsnění </span>
+                    </li>
+                    <li>
+                        <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Servis brzd <br />
+                        <span class="font-normal text-secondary inline-flex justify-left"> Výměna brzdových destiček, odvzdušnění hydraulických brzd a seřízení brzdových páček </span>
+                    </li>
+                    <li>
+                        <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Výměna píchlé pneumatiky <br />
+                        <span class="font-normal text-secondary inline-flex justify-left"> Rychlá a nezbytná služba pro cyklisty na cestách </span>
+                    </li>
+                </ul> 
             </Paragraph>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {
-                    services.map((service: ServisProps) => {
-                    return (
-                            <Service title={service.title} description={service.description} icon={service.icon}>
-                            </Service>
-                            );
-                    })
-            }
+
+        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+            <img src="/images/cyclist-racer.jpg" alt="Aktuality image" width="2350" height="2359" class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
         </div>
     </Container>
+
+    
 </section>

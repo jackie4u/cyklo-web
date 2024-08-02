@@ -1,0 +1,57 @@
+---
+import Button from "../shared/Button.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+---
+<section id="kontakt" class="pb-20">
+  <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+    <div
+      class="relative flex flex-col items-center text-left lg:text-left lg:py-7 xl:py-8
+      lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
+    >
+      <div class="mx-auto text-center max-w-xl md:max-w-2xl relative">
+        <Title>
+          <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
+            KONTAKT
+          </span>
+        </Title>
+        <div class="mx-auto text-left max-w-xl md:max-w-2xl relative">
+
+          <Paragraph className={"pt-10"}>
+            Otevírací doba:
+            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+              <li>Pondělí - Pátek: 9:00 - 17:00</li>
+              <li>Sobota: 9:00 - 12:00</li>
+              <li>Neděle: Zavřeno</li>
+            </ul>
+          </Paragraph>
+        </div>
+
+        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
+          <Button variant={"primary"}>
+            <span class="relative z-[5]">Napište nám</span>
+          </Button>
+        </div>
+        
+        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
+          <p>Telefon: +420 603 898 162</p>
+          <p>Email: info@vackar.cz</p>
+          <br />
+          <p>
+            Naše adresa:<br />
+            Uprkova 16<br />
+            Prostějov, 796 01<br />
+          </p>
+          <br />
+          <p>
+            IČ: 04542746
+          </p>
+          <p>
+            DIČ: CZ04542746
+          </p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

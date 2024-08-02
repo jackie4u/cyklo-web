@@ -1,14 +1,14 @@
 ---
 // Component Imports
 import Layout from '../layouts/MainLayout.astro';
+import Uvod from '../components/sections/Uvod.astro';
 import Aktuality from '../components/sections/Aktuality.astro';
 import Servis from '../components/sections/Servis.astro';
+import Kontakt from '../components/sections/Kontakt.astro';
 import ONas from '../components/sections/ONas.astro';
-import Features from '../components/sections/Features.astro';
-import CTA from '../components/sections/CTA.astro';
 import Znacky from '../components/sections/Znacky.astro';
-
-import Button from '../components/Button.astro';
+import Cisla from "../components/sections/Cisla.astro";
+// import Button from '../components/Button.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -16,11 +16,11 @@ import Button from '../components/Button.astro';
 
 <Layout title="Vítejte v Cyklo Vačkář">
 	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+		<Uvod/>
 		<Aktuality/>
 		<Servis/>
-		<Znacky/>
+		<Kontakt/>
 		<ONas/>
-		<Features/>
-		<CTA/>
-		<a href="/backup" class="p-4 underline">!!! Backup !!! </a>
+		<Znacky/>
+		<Cisla/>
 	</main>
