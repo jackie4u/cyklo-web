@@ -6,52 +6,79 @@ import Title from "../shared/Title.astro";
 
 <section id="o-nas" class="relative">
   <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
-    <div
-      class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8
-        lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
-    >
+    <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"> 
       <Title>
-        O
-        <span
-          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
-        >
+        O 
+        <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
           NÁS
         </span>
       </Title>
-      <Paragraph className="mt-8">
-        Prodat kolo z řady a odvést Vás k pokladně – to dokáží kdekoli. Rozdíl
-        mezi „podavači“ a prodavači poznáte snadno. Prodavači mají zkušenosti,
-        vědomosti, ale hlavně chuť se s Vámi o obojí podělit. A právě takové
-        lidi najdete v naší prodejně. Naším cílem je maximálně Vám pomoci s
-        výběrem toho nejvhodnějšího kola či doplňků. Pokud se na nás obrátíte s
-        žádostí o radu, nejdříve si vyslechneme vaše požadavky a poté vám
-        navrhneme nejvhodnější řešení. Chceme, abyste se k nám rádi vraceli.
-        Proto pracujeme na tom, aby naše služby byly stále lepší a kvalitnější.
+
+      <Paragraph className="mt-8 leading-relaxed">
+        <strong class="font-bold">V Cyklo Vačkář máme více než 30 let zkušeností s prodejem a servisem kol v Prostějově!</strong><br />
+        Nejsme jen další cyklo prodejna. Jsme rodinný podnik s tradicí sahající až do roku 1921, který žije a dýchá cyklistikou. Naše vášeň pro kola nás žene 
+        k tomu, abychom vám nabídli víc než jen prodej z řady.
       </Paragraph>
-      <Paragraph className="mt-8">
-        Máme více než třicetiletou zkušenost s prodejem a servisem jízdních kol
-        - poskytujeme širokou kolekci kol střední a vyšší trídy - provádíme
-        záruční i pozáruční servis na všechna cyklistická kola - vedeme skladem
-        široký sortiment náhradních dílů k jednotlivým značkám a modelům kol -
-        případné reklamace se u nás vřizují v řádech dnů - naši technici jsou
-        odborně vyškoleni u výrobců kol a dokáží Vám odborně poradit a také
-        vysvětlit, jak předejít nebo odstranit případné závady. Každoročně od
-        podzimu na Vás v prodejně Cyklo Vačkář čekají nové modely kol pro
-        závodní a sportovní jízdu. Méně nároční cyklisté tu najdou široký
-        sortiment kol pro volný čas. Spolu s nimi je pro Vás připraven kompletní
-        sortiment kvalitních cyklistických doplňků, oblečení a obuvi.
+
+      <Paragraph className="mt-8 leading-relaxed">
+        <h3 class="text-2xl font-semibold mb-4">Co u nás najdete?</h3>
+            <!-- class="mt-8 space-y-4 text-heading-3 font-medium items-center text-left" -->
+        <ul class="list-disc list-inside ml-4 space-y-4">
+          <li>
+            <strong class="font-bold">Osobní přístup</strong> <br />
+            Nejsme jen prodavači, ale cyklisti tělem i duší. Rádi si vyslechneme vaše potřeby a pomůžeme 
+            vám vybrat to nejvhodnější kolo či doplňky.
+          </li>
+          <li>
+            <strong class="font-bold">Široký výběr</strong> <br />
+            Nabízíme kola střední a vyšší třídy pro všechny typy cyklistů – od závodních strojů po kola 
+            pro volný čas nebo dojíždění do práce.
+          </li>
+          <li>
+            <strong class="font-bold">Kompletní servis</strong> <br />
+            Provádíme záruční i pozáruční servis všech značek kol. Díky našim zkušenostem a vybavení 
+            vyřešíme jakýkoli problém rychle a efektivně.
+          </li>
+          <li>
+            <strong class="font-bold">Kvalitní doplňky</strong> <br />
+            U nás najdete vše, co potřebujete ke svému kolu – oblečení, obuv, helmy, náhradní díly a 
+            mnoho dalšího.
+          </li>
+        </ul>
+      </Paragraph>
+
+      <Paragraph className="mt-8 leading-relaxed">
+        <h3 class="text-2xl font-semibold mb-4">Proč si vybrat právě nás?</h3> 
+
+        <ul class="list-disc list-inside ml-4 space-y-4">
+          <li>
+            <strong class="font-bold">Odborné poradenství</strong> <br />
+            Naši technici jsou pravidelně školeni u výrobců kol a rádi se s vámi podělí o své znalosti.
+          </li>
+          <li>
+            <strong class="font-bold">Rychlé reklamace</strong> <br />
+            Případné reklamace vyřizujeme v řádu dnů, abyste se mohli co nejdříve vrátit do sedla.
+          </li>
+          <li>
+            <strong class="font-bold">Tradice a zkušenosti</strong> <br />
+            Více než 30 let zkušeností v oboru je zárukou, že víme, co děláme.
+          </li>
+        </ul>
+      </Paragraph>
+
+      <Paragraph className="mt-8 leading-relaxed">
+        Navštivte nás na Uprkové ulici v Prostějově (za kostelem, naproti tržnici) a přesvědčte se sami!
       </Paragraph>
     </div>
 
-    <div
-      class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl"
-    >
-      <img
-        src="/images/woman-with-bicycle.jpg"
-        alt="Aktuality image"
-        width="2350"
-        height="2359"
-        class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96"
+    {/* Image div */}
+    <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+      <img 
+        src="/images/woman-with-bicycle.jpg" 
+        alt="Cyklistka s kolem" 
+        width="2350" 
+        height="2359" 
+        class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" 
       />
     </div>
   </Container>
