@@ -10,13 +10,13 @@ const aktuality = [
       image: "/images/aktuality/detska-sedacka.jpg"
     },
     {
-      title: "Nečekejte, až opadá listí z dubu",
+      title: "Nečekejte, až opadá listí z dubu!",
       description: "Léto sice ještě nekončí, ale podzim se blíží. Připravte své kolo na chladnější počasí a nechte si ho u nás zkontrolovat. Získáte i nezávaznou nabídku na případné opravy. Nečekejte, až bude pozdě a objednejte se na servis ještě dnes!",
       image: "/images/aktuality/servis.jpg"
     },
     {
-      title: "Nové elektrokola na skladě!",
-      description: "Hledáte ekologický a pohodlný způsob dopravy? Přijďte si vyzkoušet naše nové elektrokola. Nabízíme široký výběr modelů pro všechny typy jezdců.",
+      title: "Nová elektrokola na skladě!",
+      description: "Hledáte ekologický a pohodlný způsob dopravy? Přijďte si vyzkoušet naše nová elektrokola. Nabízíme široký výběr modelů pro všechny typy jezdců.",
       image: "/images/aktuality/elektro-kolo.jpg"
     },
     {
