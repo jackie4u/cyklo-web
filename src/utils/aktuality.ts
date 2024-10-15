@@ -1,5 +1,10 @@
 const aktuality = [
     {
+      title: "Pozor na změnu otevírací doby!",
+      description: "Ve středu 16. října zavíráme již v 15:00. Ve čtvrtek a v pátek (17. - 18. října) bude zavřeno.",
+      image: "/images/aktuality/servis.jpg"
+    },
+    {
       title: "Užijte si podzimní cyklovýlety naplno!",
       description: "Podzimní měsíce jsou ideální pro cyklistiku. Babí léto nabízí krásné počasí a ubývající provoz na cyklostezkách. Připravte si kolo na sezonu a vyrazte objevovat krásy okolí!",
       image: "/images/aktuality/podzim.jpg"
@@ -8,11 +13,6 @@ const aktuality = [
       title: "Nové dětské sedačky na skladě!",
       description: "Připravte se na cyklistické výlety s celou rodinou. Máme nové dětské sedačky na kola skladem! Přijďte si vybrat tu nejlepší pro vašeho malého cyklistu.",
       image: "/images/aktuality/detska-sedacka.jpg"
-    },
-    {
-      title: "Nečekejte, až opadá listí z dubu!",
-      description: "Léto sice ještě nekončí, ale podzim se blíží. Připravte své kolo na chladnější počasí a nechte si ho u nás zkontrolovat. Získáte i nezávaznou nabídku na případné opravy. Nečekejte, až bude pozdě a objednejte se na servis ještě dnes!",
-      image: "/images/aktuality/servis.jpg"
     },
     {
       title: "Nová elektrokola na skladě!",
