@@ -1,7 +1,7 @@
 const aktuality = [
     {
-      title: "Pozor na změnu otevírací doby!",
-      description: "Ve středu 16. října zavíráme již v 15:00. Ve čtvrtek a v pátek (17. - 18. října) bude zavřeno.",
+      title: "Nečekejte, až opadá listí z dubu!",
+      description: "Podzim už je v plném proudu. Připravte své kolo na chladnější počasí a nechte si ho u nás zkontrolovat. Získáte i nezávaznou nabídku na případné opravy. Nečekejte, až bude pozdě a objednejte se na servis ještě dnes!",
       image: "/images/aktuality/servis.jpg"
     },
     {
